@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: #000;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Font class */
+.font-all {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(45,62,131,0.923);
+  transition: all linear 0.4s;
+  color: #4ee4ff;
+  z-index: 99999;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  animation: scroll-header-animation 0.5s linear;
+  box-shadow: 0px 2px 15px #0000000d;
+  
+}
+
+.bgGradient {
+  background: rgb(83,27,172);
+  background: radial-gradient(circle, rgba(83,27,172,1) 0%, rgba(18,86,102,1) 100%);
+}
+.bg-header {
+  background: rgb(83,27,172);
+  background: radial-gradient(circle, rgba(45,62,131,1) 0%, rgba(18,86,102,1) 100%);
+}
+
+
+
+/* ===== scrollbar design css ===== */
+/* ::-webkit-scrollbar{
+  width: 20px;
+}
+::-webkit-scrollbar-track{
+  background-color: #b75bf552;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #4c118391;
+  border-radius: 20px;
+} */
+
+
+/* text gradient */
+.text1 {
+  background: linear-gradient(90deg, #09619c, #c769f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text2 {
+  background: linear-gradient(90deg, #ffffff, #ce76f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient1 {
+  background: linear-gradient(45deg, #5b34c7ec, #6715c49d);
+}
+.gradient1{
+  background: linear-gradient(45deg, #4511d45e, #1592c442);
+}
+
+
+
+
+/* marquee tags style */
+.notice-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.notice-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+
+/* backgroud img */
+
+.bg-gradient-trasparent {
+  background: radial-gradient(circle, rgba(106, 46, 202, 0.699) 0%, rgba(8, 96, 116, 0.541) 100%);
+}
+
+
+.registration-bg {
+  background-image: url('../assets/image/islamic-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set the height as needed */
+}
+
+.contact-bg{
+  background-image: url('../assets/image/islamic-banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* animation header */
+@keyframes scroll-header-animation {
+  from {
+    top: -90px;
+  }
+
+  to {
+    top: 0;
+  }
+}
+
