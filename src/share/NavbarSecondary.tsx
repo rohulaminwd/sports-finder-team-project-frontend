@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import user from '../assets/image/user.jpg'
-import quran from '../assets/image/quran.png'
+import logo from '../assets/image/sports.png'
 import '../styles/Home.css'
 import Link from 'next/link';
+import { MdSportsBasketball } from 'react-icons/md';
 
 const NavbarSecondary = () => {
     const [stickyClass, setStickyClass] = useState("0");
@@ -29,11 +30,13 @@ const NavbarSecondary = () => {
     return (
         <div className={`${stickyClass} bg-header w-full `}>
             <div style={{ maxWidth: "1280px" }} className={`w-full mx-auto py-1 flex justify-between items-center w-7xl duration-300  px-2 text-white`}>
-                <div className="">
-                    <Image src={quran} width={50} height={50} alt='quran' />
+                <div className="flex items-center text-[#fff] gap-2">
+                   <span className='text-2xl'> <MdSportsBasketball /> </span>
+                    <Link href='/' className='font-bold text-2xl'>SPORTALIZE</Link>
+                        
                 </div>
                 <div>
-                    <ul className='flex font-all gap-x-4 justify-center items-center'>
+                    <ul className='flex font-all gap-2 justify-between items-center'>
                         <li>
                             <Link href='/'>হুম</Link>
                         </li>
