@@ -38,6 +38,9 @@ export default function Home() {
         </div>
       </div> */}
       <NavbarSecondary />
+      <div>
+        <HomeBanner/>
+      </div>
       <PrimaryFooter />
     </div>
   )

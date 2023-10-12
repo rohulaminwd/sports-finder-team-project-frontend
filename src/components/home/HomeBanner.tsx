@@ -3,7 +3,6 @@
 import React from "react";
 import banner from "../../assets/lottie/banner.json";
 import Lottie from "lottie-react";
-import NoticeMarquee from "./NoticeMarquee";
 import Link from "next/link";
 
 const HomeBanner = () => {
@@ -58,7 +57,7 @@ const HomeBanner = () => {
                 </div>
             </div>
             <div className="">
-                <NoticeMarquee />
+                
             </div>
         </div>
     );
